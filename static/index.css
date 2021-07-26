@@ -1,0 +1,87 @@
+body{
+	background: deepskyblue;
+	width: 100%;
+    height: 100%;
+    background-attachment: fixed;
+}
+
+.bg h1{
+	text-align: center;
+	font-size: 50px;
+	font-family: Verdana;
+
+}
+
+.tabs{
+	text-align: center;
+	padding-top: 50px;
+}
+
+.about_b{
+	
+	margin: 20px;
+	background-color: black;
+	color: white;
+	font-weight: bold;
+	font-size: 25px;
+	padding: 10px 48px;
+	font-family: Times New Roman;
+	
+}
+.about_b:hover{
+	cursor: pointer;
+	color: orange;
+}
+
+.login_b{
+	margin: 20px;
+	background-color: black;
+	color: white;
+	font-weight: bold;
+	font-size: 25px;
+	padding: 10px 50px;
+	font-family: Times New Roman;
+	
+}
+.login_b:hover{
+	cursor: pointer;
+	color: orange;
+}
+.register_b{
+	
+	margin: 20px;
+	background-color: black;
+	font-weight: bold;
+	color: white;
+	font-size: 25px;
+	padding: 10px 37px;
+	font-family: Times New Roman;
+	
+}
+.register_b:hover{
+	cursor: pointer;
+	color: orange;
+}
+.contact_b{
+	
+	margin: 20px;
+	background-color: black;
+	font-weight: bold;
+	color: white;
+	font-size: 25px;
+	padding: 10px 48px;
+	font-family: Times New Roman;
+	
+}
+.contact_b:hover{
+	cursor: pointer;
+	color: orange;
+}
+
+.quotes{
+
+	padding-top: 80px;
+	color: white;
+	font-size: 25px;
+	font-family: monospace;
+}

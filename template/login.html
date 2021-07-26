@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Login</title>
+		<link rel="stylesheet" type="text/css" href="static/login.css">
+	</head>
+	<body>
+		<div id = "bar" class = "sidebar">
+			<a href="{{url_for('todo.home')}}" id="home">Home</a>
+			<a href="{{url_for('todo.about')}}" id="about">About</a>
+			<a href="{{url_for('todo.contact')}}" id="contact">Contact</a>
+			<a href="{{url_for('todo.register')}}" id="register">Register</a>
+		</div>
+		<div class="loginbox">
+			<h1><b>Login</b></h1>
+			<form action = "{{url_for('todo.login')}}" method="POST">
+				<label for="uname" >Username</label>
+				<input type="text" name="uname" placeholder="Enter username"><br>
+				<label for="pw">Password</label>
+				<input type="text" name="pw" placeholder="Enter Password"><br>
+				<input type="submit" name="Submit" value="Login">
+			</form>
+			<a href="{{url_for('todo.register')}}"><b>Register Here</b>
+			</div>
+		</body>
+	</html>

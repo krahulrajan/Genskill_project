@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Update</title>
+		<style type="text/css">
+			body{
+				background: deepskyblue;
+				width: 100%;
+			height: 100%;
+			background-attachment: fixed;
+				}
+			h1{
+				color: white;
+				font-size: 50px;
+				text-align: center;
+				padding-bottom: 40px;
+				padding-top: 30px;
+			}
+			h2{
+				color: black;
+				font-family: monospace;
+				font-size: 30px;
+			}
+			textarea{
+				font-size: 20px;
+				background-color: deepskyblue;
+				outline: none;
+				border: 5px solid white;
+				margin-left: 10px;
+			}
+			label[for = "due"]{
+				color: black;
+				font-family: monospace;
+				font-size: 20px;
+			}
+			input[type = "date"]{
+				border: 5px solid white;
+			}
+			input[type = "submit"]{
+				margin: 4px;
+				background-color: black;
+				color: white;
+				font-weight: bold;
+				font-size: 25px;
+				padding: 10px 48px;
+				font-family: Times New Roman;
+			}
+			input[type = "submit"]:hover{
+				color: orange;
+				cursor: pointer;
+			}
+			label[for = "status"]{
+				color: black;
+				font-family: monospace;
+				font-size: 20px;
+			}
+			select{
+				border: 2px solid white;
+				color: black;
+				font-family: monospace;
+				font-size: 17px;
+			}
+			option{
+				color: black;
+				font-family: monospace;
+				font-size: 17px;
+			}
+			.bg{
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Update Now</h1>
+		<div class="bg">
+			<form action = "{{url_for('todo.update',d = d)}}" method="POST">
+				<h2>ToDo Description</h2>
+				<label for="d" class="form-label"></label>
+				<textarea rows="10" cols = "70" id="d" class="form-control" name="d">
+				{{d}}
+				</textarea><br>
+				<label for="due">Due date:</label>
+				<input type="date" id="due" name="due"><br><br>
+				<label for='status'>Choose:</label>
+				<select name = "status" id="status">
+					<option name = "NOT DONE">NOT DONE</option>
+					<option name = "DONE">DONE</option>
+				</select><br><br><br><br>
+				<input type="submit" name="Submit" value="Submit">
+			</form>
+		</div>
+	</body>
+</html>
